@@ -1,0 +1,21 @@
+<h2>Liste des Produits</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produit of produits">
+      <td>{{ produit.nom }}</td>
+      <td>{{ produit.description }}</td>
+      <td>{{ produit.prix }}</td>
+      <td>
+        <input type="number" min="1" max="100" placeholder="Qts" />
+      </td>
+    </tr>
+  </tbody>
+</table>
